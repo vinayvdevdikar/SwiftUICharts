@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import Charts
 struct ChartContainer: View {
     
     @State private var selectedTab = TabItems.bar.rawValue
+    @StateObject var viewModel = ViewModel()
     
     var body: some View {
         TabView {
@@ -19,7 +21,15 @@ struct ChartContainer: View {
             LineChartScene().tabItem {
                 Label("Line", image: "linechart")
             }.tag(TabItems.line.rawValue)
+            
+            DotChartScene().tabItem {
+                Label("Dot", image: "dotchart")
+            }.tag(TabItems.line.rawValue)
         }
+        .onAppear(perform: {
+            viewModel.fetchChartDetails()
+        })
+        .environmentObject(viewModel)
     }
 }
 

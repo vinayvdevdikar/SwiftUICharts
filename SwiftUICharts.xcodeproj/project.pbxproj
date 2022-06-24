@@ -17,6 +17,10 @@
 		35749A7F285859FB006B5BAE /* SwiftUIChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35749A7E285859FB006B5BAE /* SwiftUIChartsTests.swift */; };
 		35749A89285859FB006B5BAE /* SwiftUIChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35749A88285859FB006B5BAE /* SwiftUIChartsUITests.swift */; };
 		35749A8B285859FB006B5BAE /* SwiftUIChartsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35749A8A285859FB006B5BAE /* SwiftUIChartsUITestsLaunchTests.swift */; };
+		35FB94BF28659AA600F0CBCD /* DotChartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB94BE28659AA600F0CBCD /* DotChartScene.swift */; };
+		35FB94CB2865B03C00F0CBCD /* ChartContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB94C92865B03C00F0CBCD /* ChartContainerModel.swift */; };
+		35FB94CC2865B03C00F0CBCD /* ChartContainer+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB94CA2865B03C00F0CBCD /* ChartContainer+ViewModel.swift */; };
+		35FB94CE2865B04B00F0CBCD /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 35FB94CD2865B04B00F0CBCD /* response.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		35749A84285859FB006B5BAE /* SwiftUIChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35749A88285859FB006B5BAE /* SwiftUIChartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChartsUITests.swift; sourceTree = "<group>"; };
 		35749A8A285859FB006B5BAE /* SwiftUIChartsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChartsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35FB94BE28659AA600F0CBCD /* DotChartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotChartScene.swift; sourceTree = "<group>"; };
+		35FB94C92865B03C00F0CBCD /* ChartContainerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartContainerModel.swift; sourceTree = "<group>"; };
+		35FB94CA2865B03C00F0CBCD /* ChartContainer+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChartContainer+ViewModel.swift"; sourceTree = "<group>"; };
+		35FB94CD2865B04B00F0CBCD /* response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,8 @@
 		35592014285F5B0800F71D00 /* ChartContainer */ = {
 			isa = PBXGroup;
 			children = (
+				35FB94CA2865B03C00F0CBCD /* ChartContainer+ViewModel.swift */,
+				35FB94C92865B03C00F0CBCD /* ChartContainerModel.swift */,
 				35592015285F5B0800F71D00 /* ChartContainer.swift */,
 			);
 			path = ChartContainer;
@@ -113,10 +123,12 @@
 			isa = PBXGroup;
 			children = (
 				35592017285F5D5500F71D00 /* BarChart */,
+				35FB94BD28659A6F00F0CBCD /* DotChart */,
 				3559201A285F620200F71D00 /* LineChart */,
 				35592014285F5B0800F71D00 /* ChartContainer */,
 				35749A6C285859F8006B5BAE /* SwiftUICharts */,
 				35365C5E285A23A20089E7CB /* Utility */,
+				35FB94C228659D8500F0CBCD /* Resource */,
 				35749A7D285859FB006B5BAE /* SwiftUIChartsTests */,
 				35749A87285859FB006B5BAE /* SwiftUIChartsUITests */,
 				35749A6B285859F8006B5BAE /* Products */,
@@ -166,6 +178,22 @@
 				35749A8A285859FB006B5BAE /* SwiftUIChartsUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIChartsUITests;
+			sourceTree = "<group>";
+		};
+		35FB94BD28659A6F00F0CBCD /* DotChart */ = {
+			isa = PBXGroup;
+			children = (
+				35FB94BE28659AA600F0CBCD /* DotChartScene.swift */,
+			);
+			path = DotChart;
+			sourceTree = "<group>";
+		};
+		35FB94C228659D8500F0CBCD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				35FB94CD2865B04B00F0CBCD /* response.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35749A75285859FB006B5BAE /* Preview Assets.xcassets in Resources */,
+				35FB94CE2865B04B00F0CBCD /* response.json in Resources */,
 				35749A72285859FB006B5BAE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,8 +329,11 @@
 			files = (
 				35749A6E285859F8006B5BAE /* SwiftUIChartsApp.swift in Sources */,
 				35365C60285A23AA0089E7CB /* Constant.swift in Sources */,
+				35FB94BF28659AA600F0CBCD /* DotChartScene.swift in Sources */,
 				35592016285F5B0800F71D00 /* ChartContainer.swift in Sources */,
 				35592019285F5D6400F71D00 /* BarChartScene.swift in Sources */,
+				35FB94CC2865B03C00F0CBCD /* ChartContainer+ViewModel.swift in Sources */,
+				35FB94CB2865B03C00F0CBCD /* ChartContainerModel.swift in Sources */,
 				3559201C285F621900F71D00 /* LineChartScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +500,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,6 +529,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

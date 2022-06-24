@@ -1,0 +1,43 @@
+{
+"rates": [
+    {
+        "country": "USD",
+        "value": 1
+    },
+    {
+        "country": "VND",
+        "value": 3.67
+    },
+    {
+        "country": "AFN",
+        "value": 5.54
+    },
+    {
+        "country": "MZN",
+        "value": 10.35
+    },
+    {
+        "country": "AMD",
+        "value": 5.4
+    },
+    {
+        "country": "ANG",
+        "value": 7.79
+    },
+    {
+        "country": "JPY",
+        "value": 2.97
+    },
+    {
+        "country": "GBP",
+        "value": 0.816
+    },
+    {
+        "country": "IQD",
+        "value": 1.45
+    },
+    {
+        "country": "FJD",
+        "value": 1.79
+    }
+]}
