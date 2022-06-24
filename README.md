@@ -29,3 +29,7 @@ For `internal` and `private` code we should not need any documentation as most o
 
 This project uses not using any formater / lint.
 
+## Preview
+
+![Bar Chart](./Images/barChart.png)
+
