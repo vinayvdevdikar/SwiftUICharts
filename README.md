@@ -31,5 +31,9 @@ This project uses not using any formater / lint.
 
 ## Preview
 
-![Bar Chart](./Images/barChart.png| width=250)
+![Bar Chart](./Images/barChart.png)
+
+![Line Chart](./Images/lineChart.png)
+
+![Dot Chart](./Images/dotChart.png)
 
