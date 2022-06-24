@@ -31,5 +31,5 @@ This project uses not using any formater / lint.
 
 ## Preview
 
-![Bar Chart](./Images/barChart.png =250x250)
+![Bar Chart](./Images/barChart.png| width=250)
 
