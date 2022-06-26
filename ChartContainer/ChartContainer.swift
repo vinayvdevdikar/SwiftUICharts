@@ -23,7 +23,7 @@ struct ChartContainer: View {
             }.tag(TabItems.line.rawValue)
             
             DotChartScene().tabItem {
-                Label("Dot", image: "dotchart")
+                Label("Dot", image: "dotChart")
             }.tag(TabItems.line.rawValue)
         }
         .onAppear(perform: {
