@@ -12,19 +12,8 @@ struct BarChartScene: View {
     var body: some View {
         NavigationView {
             VStack {
-                Chart(viewModel.chartData) {
-                    BarMark(
-                        x: .value("Country", $0.name),
-                        y: .value("Currency", $0.value)
-                    ).foregroundStyle(.blue)
-                }
+                ChartUIView(type: .bar)
             }.navigationTitle("Bar Chart")
         }.navigationViewStyle(.stack)
-    }
-}
-
-struct BarChart_Previews: PreviewProvider {
-    static var previews: some View {
-        BarChartScene()
     }
 }
